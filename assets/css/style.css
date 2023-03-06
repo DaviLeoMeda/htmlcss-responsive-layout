@@ -1,5 +1,101 @@
+/************************************************
+    UTILITIES
+ ************************************************/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.flexible {
+    display: flex;
+}
+
+.just-between {
+    justify-content: space-between;
+}
+
+.wrapped {
+    flex-wrap: wrap;
+}
+
+.alitem-center {
+    align-items: center;
+}
+
+.bc-blue {
+    background-color: rgb(39, 39, 243);
+}
+
+.container-90 {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.bc-lightblue {
+    background-color: rgb(124, 194, 218);
+}
+
+
+
+/************************************************
+    SITE SECTIONS
+ ************************************************/
+
+/* Nav Section */
+
+.header section {
+    margin: 0 15px;
+    color: white;
+}
+
+
+
+/* Body Section */
+
+a {
+    text-decoration: none;
+}
+
+.head-card.first div img {
+    width: 100%;
+}
+
+.button-a {
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding: 3px 5px;
+}
+
+.head-card {
+    border-radius: 10px;
+}
+
+.head-card.first {
+    width: 100%;
+}
+
+.head-card.secondary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.head-card.secondary * {
+    width: 100%;
+}
+
+/* Screen Sector */
+
+@media screen and (min-width: 768px) {
+    .head-card.first {
+        width: calc(100% / 3 * 2 - 1%);
+    }
+
+    .head-card.secondary {
+        width: calc(100% / 3 - 2%);
+    }
 }
