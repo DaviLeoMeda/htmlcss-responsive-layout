@@ -49,6 +49,10 @@
 }
 
 
+.debug {
+    border: 1px dashed black;
+}
+
 
 
 
@@ -57,6 +61,11 @@ SITE SECTIONS
 ************************************************/
 
 /* Nav Section */
+
+header {
+    position: sticky;
+    top: 0;
+}
 
 
 .header section {
@@ -258,13 +267,60 @@ a {
     aspect-ratio: 1;
     border-radius: 50%;
     object-fit: cover;
-    margin-top: 2rem;
-
 }
 
 .testimonial div:last-child {
     padding-bottom: 2rem;
 }
+
+
+
+/* Slides Elements */
+
+
+.outslides {
+    background-color: rgb(154, 150, 229);
+}
+
+.outslides>h2 {
+    text-align: center;
+    color: #fff;
+    padding: 3rem 0;
+}
+
+.slide {
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+}
+
+.slide h2 {
+    font-size: 2rem;
+    color: rgb(154, 150, 229);
+    padding: 1.25rem 0;
+}
+
+.slide h3 {
+    color: rgb(154, 150, 229);
+    padding: 1rem 0;
+}
+
+.slide p {
+    padding-bottom: 1rem;
+}
+
+.button-b {
+    padding-bottom: 2rem;
+    display: inline-block;
+}
+
+.button-b a {
+    padding: 5px 30px;
+    background-color: rgb(154, 150, 229);
+    color: #fff;
+    border-radius: 9px;
+}
+
 
 
 /************************************************
@@ -273,7 +329,12 @@ SOLUZIONE RESPONSIVE
 
 @media screen and (max-width: 768px) {
     .head-img {
-        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slide {
+        width: 80%;
     }
 
 }
@@ -287,13 +348,30 @@ SOLUZIONE RESPONSIVE
         width: calc(100% / 3 - 2%);
     }
 
+    .head-img {
+        display: flex;
+        justify-content: flex-start;
+    }
+
 }
 
-@media and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .slide {
+        width: calc(100% / 2 - 1rem);
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
 
     .head-text,
     .head-img {
         width: 90%;
+    }
+
+    .pics {
+        padding-top: 2rem;
     }
 }
 
@@ -333,10 +411,19 @@ SOLUZIONE RESPONSIVE
 
     .pics {
         display: flex;
+        align-items: center;
+        padding: 1.5rem 0;
+        padding-left: 0.75rem;
     }
 
-    .pics img {
-        align-items: center;
+    .inslides {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
+    .slide {
+        width: calc(90% / 3 - 5px);
     }
 
 
