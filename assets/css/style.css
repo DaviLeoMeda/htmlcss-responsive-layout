@@ -33,6 +33,11 @@
     margin: 0 auto;
 }
 
+.container-90-p {
+    width: 90%;
+    margin: 0 auto;
+}
+
 
 .bc-lightblue {
     background-color: rgb(124, 194, 218);
@@ -40,14 +45,16 @@
 
 
 
+
 /************************************************
-    SITE SECTIONS
- ************************************************/
+SITE SECTIONS
+************************************************/
 
 /* Nav Section */
 
+
 .header section {
-    margin: 0 15px;
+    margin: 1.5rem;
     color: white;
 }
 
@@ -97,7 +104,7 @@ a {
 }
 
 .head-card {
-    border-radius: 10px;
+    border-radius: 15px;
     margin-bottom: 2%;
 }
 
@@ -142,6 +149,65 @@ a {
 
 
 
+/* Dual Elements */
+
+#dual {
+    background-color: rgb(149, 147, 230);
+    padding-bottom: 3rem;
+}
+
+.dualbig img,
+.dualsmall img {
+    width: 100%;
+    margin: 2rem 0;
+}
+
+.dualbig h3,
+.dualbig p {
+    color: #fff;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.dualsmall {
+    background-color: #fff;
+    border-radius: 15px;
+}
+
+.dualsmall * {
+    text-align: center;
+}
+
+.dualbig h3 {
+    text-align: center;
+}
+
+.dualsmall div h3,
+.dualsmall div p,
+.dualsmall div a {
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.dualsmall div a {
+    display: inline-block;
+}
+
+
+
+.dualsmall div a i {
+    font-size: 1.25rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+    background-color: rgb(151, 146, 228);
+    border-radius: 100%;
+}
+
+
+
+
+
+
 /************************************************
 SOLUZIONE RESPONSIVE
 ************************************************/
@@ -174,8 +240,8 @@ SOLUZIONE RESPONSIVE
 }
 
 
-@media and (min-width: 1024px) {
-    .header section img {
+@media screen and (min-width: 1024px) {
+    .header section i {
         display: none;
     }
 
@@ -183,7 +249,19 @@ SOLUZIONE RESPONSIVE
         display: block;
     }
 
-    .head-card.first {
+    #dual>div {
         display: flex;
+        justify-content: space-between;
     }
+
+    .dualbig {
+        width: 60%;
+    }
+
+    .dualsmall {
+        width: 20%;
+        align-self: flex-end;
+    }
+
+
 }
