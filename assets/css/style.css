@@ -83,7 +83,7 @@ header {
     display: none;
 }
 
-ul li {
+.header section ul li {
     display: inline-block;
     list-style: none;
     margin: 0 1.5rem;
@@ -392,12 +392,51 @@ a {
     background-color: rgb(154, 150, 229);
 }
 
+.free * {
+    text-align: center;
+}
+
 .free div span {
     color: lightblue;
+    display: inline-block;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .free div h3 {
     color: #fff;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.free div h2 {
+    color: gold;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.free div p {
+    color: #fff;
+    width: 60%;
+    margin: 1rem auto;
+}
+
+.free div>a {
+    display: inline-block;
+    margin: 3rem;
+    padding: 1rem 3.5rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.free div ul span {
+    color: lightblue;
+}
+
+.free div ul li {
+    display: inline-block;
+    color: lightblue;
+    list-style: armenian;
 }
 
 
