@@ -28,6 +28,10 @@
     background-color: rgb(39, 39, 243);
 }
 
+.bg-black {
+    background-color: rgb(10, 10, 10);
+}
+
 .container-90 {
     width: 90vw;
     margin: 0 auto;
@@ -70,6 +74,7 @@ SITE SECTIONS
 
 header {
     position: sticky;
+    z-index: 2;
     top: 0;
 }
 
@@ -437,9 +442,28 @@ a {
     display: inline-block;
     color: lightblue;
     list-style: armenian;
+    margin-bottom: 3rem;
+}
+
+.foot {
+    text-align: center;
+}
+
+.foot div p {
+    padding-top: 2rem;
+    margin-bottom: 2.5rem;
+    color: #fff;
 }
 
 
+.foot div span {
+    display: block;
+    color: #fff;
+}
+
+.foot div span:last-child {
+    padding-bottom: 3rem;
+}
 
 
 /************************************************
@@ -514,6 +538,10 @@ SOLUZIONE RESPONSIVE
     .aboutus {
         width: 90%;
         margin: 0 auto;
+    }
+
+    .foot {
+        display: none;
     }
 
 }
