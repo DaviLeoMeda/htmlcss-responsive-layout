@@ -53,7 +53,13 @@
     border: 1px dashed black;
 }
 
+.relative {
+    position: relative;
+}
 
+.absolut {
+    position: absolute;
+}
 
 
 /************************************************
@@ -314,12 +320,86 @@ a {
     display: inline-block;
 }
 
+
 .button-b a {
     padding: 5px 30px;
     background-color: rgb(154, 150, 229);
     color: #fff;
     border-radius: 9px;
 }
+
+.button-c a {
+    padding: 5px 15px;
+    background-color: rgb(154, 150, 229);
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+.aboutus-text,
+.aboutus-img {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.aboutus-text h2 {
+    font-size: 2rem;
+    color: rgb(154, 150, 229);
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.aboutus {
+    justify-content: space-between;
+}
+
+.aboutus-text p {
+    margin-bottom: 1.25rem;
+}
+
+.aboutpic img {
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.aboutpic {
+    width: 55%;
+    margin-bottom: 1rem;
+}
+
+.aboutext {
+    width: 100%;
+}
+
+.aboutext p {
+    color: rgb(154, 150, 229);
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.quest {
+    top: 0;
+    right: 0;
+}
+
+.aboutpic span i {
+    font-size: 3rem;
+    color: rgb(154, 150, 229);
+}
+
+.free {
+    background-color: rgb(154, 150, 229);
+}
+
+.free div span {
+    color: lightblue;
+}
+
+.free div h3 {
+    color: #fff;
+}
+
 
 
 
@@ -335,6 +415,11 @@ SOLUZIONE RESPONSIVE
 
     .slide {
         width: 80%;
+    }
+
+    .aboutus {
+        width: 90%;
+        margin: 0 auto;
     }
 
 }
@@ -353,11 +438,43 @@ SOLUZIONE RESPONSIVE
         justify-content: flex-start;
     }
 
+    .aboutus-text {
+        width: 50%;
+    }
+
+
+    .aboutus-img {
+        width: 30%;
+        margin-top: 3.5rem;
+    }
+
+
+    .aboutpic {
+        width: 100%;
+    }
+
+    .aboutext {
+        width: 70%;
+    }
+
+    .aboutext p {
+        font-size: 1rem;
+    }
+
+    .button-c a {
+        font-size: 0.7rem;
+    }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .slide {
         width: calc(100% / 2 - 1rem);
+    }
+
+    .aboutus {
+        width: 90%;
+        margin: 0 auto;
     }
 
 }
@@ -424,6 +541,11 @@ SOLUZIONE RESPONSIVE
 
     .slide {
         width: calc(90% / 3 - 5px);
+    }
+
+    .aboutus {
+        width: 70%;
+        margin: 0 auto;
     }
 
 
