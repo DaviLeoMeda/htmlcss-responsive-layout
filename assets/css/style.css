@@ -33,6 +33,7 @@
     margin: 0 auto;
 }
 
+
 .bc-lightblue {
     background-color: rgb(124, 194, 218);
 }
@@ -58,9 +59,11 @@ a {
     text-decoration: none;
 }
 
-.head-card.first div img {
-    width: 100%;
+.head-img img {
+    width: 80%;
 }
+
+
 
 .button-a {
     background-color: blue;
@@ -69,26 +72,53 @@ a {
     padding: 3px 5px;
 }
 
+.head-text h3 {
+    color: blue;
+}
+
+
+
+.head-text * {
+    margin: 20px 0;
+}
+
 .head-card {
     border-radius: 10px;
+    margin-bottom: 2%;
+}
+
+.head-card div {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .head-card.first {
     width: 100%;
 }
 
-.head-card.secondary {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-}
 
 .head-card.secondary * {
     width: 100%;
+    text-align: center;
+    margin: 20px 0;
 }
 
-/* Screen Sector */
+.head-card.secondary div,
+.head-card.secondary p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.head-card.secondary div i {
+    width: 5rem;
+}
+
+
+
+/************************************************
+SOLUZIONE RESPONSIVE
+************************************************/
+
 
 @media screen and (min-width: 768px) {
     .head-card.first {
@@ -98,4 +128,21 @@ a {
     .head-card.secondary {
         width: calc(100% / 3 - 2%);
     }
+
+}
+
+@media and (max-width: 1024px) {
+
+    .head-text,
+    .head-img {
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .head-img {
+        text-align: center;
+    }
+
 }
