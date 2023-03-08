@@ -441,7 +441,7 @@ a {
 .free div ul li {
     display: inline-block;
     color: lightblue;
-    list-style: armenian;
+    list-style: circle;
     margin-bottom: 3rem;
 }
 
@@ -538,10 +538,6 @@ SOLUZIONE RESPONSIVE
     .aboutus {
         width: 90%;
         margin: 0 auto;
-    }
-
-    .foot {
-        display: none;
     }
 
 }
