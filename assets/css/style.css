@@ -269,13 +269,13 @@ a {
     text-align: center;
 }
 
-.testimonial p::before {
+/* .testimonial p::before {
     content: "\f10d";
 }
 
 .testimonial p::after {
     content: "\f10e";
-}
+} */
 
 .pics img {
     width: 8rem;
